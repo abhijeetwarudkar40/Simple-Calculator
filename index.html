@@ -8,28 +8,30 @@
 </head>
 <body>
     <div class="container">
-        <div class="display"></div>
+        <input id="display" readonly></input>
         <div class="buttons">
-            <div class="btn btn1">AC</div>
-            <div class="btn btn2">X²</div>
-            <div class="btn btn4">*</div>
-            <div class="btn btn3">DEL</div>
-            <div class="btn btn5">9</div>
-            <div class="btn btn6">8</div>
-            <div class="btn btn7">7</div>
-            <div class="btn btn8">-</div>
-            <div class="btn btn9">6</div>
-            <div class="btn btn10">5</div>
-            <div class="btn btn11">4</div>
-            <div class="btn btn12">/</div>
-            <div class="btn btn13">3</div>
-            <div class="btn btn14">2</div>
-            <div class="btn btn15">1</div>
-            <div class="btn btn15">+</div>
-            <div class="btn btn15">.</div>
-            <div class="btn btn15">0</div>
-            <div class="btn btn15">√X</div>
-            <div class="btn btn15">=</div>
+            <button class="btn fn" onclick="clearDisplay('+')">C</button>
+            <button class="btn fn" onclick="appendToDisplay('^')">X^</button>
+            <button class="btn fn" onclick="appendToDisplay('√')">√</button>
+
+            <button class="btn fn" onclick="appendToDisplay('/')">/</button>
+            <button class="btn" onclick="appendToDisplay('7')">7</button>
+            <button class="btn" onclick="appendToDisplay('8')">8</button>
+            <button class="btn" onclick="appendToDisplay('9')">9</button>
+            <button class="btn fn" onclick="appendToDisplay('*')">*</button>
+            <button class="btn" onclick="appendToDisplay('4')">4</button>
+            <button class="btn" onclick="appendToDisplay('5')">5</button>
+            <button class="btn" onclick="appendToDisplay('6')">6</button>
+            <button class="btn fn" onclick="appendToDisplay('-')">-</button> 
+            <button class="btn" onclick="appendToDisplay('1')">1</button>
+            <button class="btn" onclick="appendToDisplay('2')">2</button>
+            <button class="btn" onclick="appendToDisplay('3')">3</button>
+            <button class="btn fn" onclick="appendToDisplay('+')">+</button>
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn" onclick="appendToDisplay('0')">0</button>      
+            <button class="btn" onclick=""></button>    
+            <button class="btn fn" onclick="calculate()">=</button>
+            
         </div>
     </div>
     <script src="script.js"></script>

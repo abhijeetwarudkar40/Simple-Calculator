@@ -1,50 +1,58 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(59, 36, 36);
+    background-color: #2F4F4F; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    background-color: rgb(22, 22, 22);
+    background-color: #1C1C1C; 
     height: 630px;
     width: 450px;
     border-radius: 16px;
     padding: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
-
-.display {
-    display: flex;
+#display {
     margin-top: 10px;
-    background-color: rgb(60, 60, 60);
-    height: 120px;
-    width: 425px;
+    background-color: #000; 
+    height: 100px;
+    width: 400px;
     border-radius: 16px;
+    border: none;
+    color: #EAEAEA;
+    font-size: 3rem;
+    padding: 10px;
+    text-align: right;
 }
 
 .buttons {
     margin-top: 20px;
     display: grid;
-    background-color:  rgb(60, 60, 60);
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 10px; 
+    background-color: #2F4F4F; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     padding: 10px;
-    width: 400px; 
+    width: 400px;
     border-radius: 16px;
 }
+
 .btn {
-    background-color: lightgray;
+    background-color: #D3D3D3;
     border-radius: 8px;
+    border: none;
     height: 80px;
     display: flex;
     align-items: center;
@@ -52,10 +60,19 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.2s;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.2s, transform 0.1s;
 }
 
 .btn:hover {
-    background-color: darkgray;
+    background-color: #B0B0B0; 
+    transform: scale(1.05);
+}
+
+.fn {
+    background-color: #008080; 
+    color: #fff;
+}
+
+.fn:hover {
+    background-color: #006666; 
 }
